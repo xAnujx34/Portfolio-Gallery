@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -67,4 +68,19 @@ body{
 
 .col-2{
     grid-column: span 2;
+}
+
+/* media queries */
+
+@media screen and (width<=1024px){
+    .container{
+        flex-direction: column;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
 }
